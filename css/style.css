@@ -1,0 +1,116 @@
+.name{
+    margin-top: 7rem;
+    font-size: 5rem;
+    color: rgb(2, 116, 116);
+    margin-bottom: 2rem;
+}
+
+.que{
+    margin: 1.5rem;
+    font-size: 1.2rem;
+    display: inline-block;
+}
+
+.form-control{
+    margin: 1rem;
+    width: 50rem;
+}
+
+.container{
+    padding-left: 200px;
+}
+
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.button{
+    margin: 3rem 0;
+}
+
+.start{
+    color: white;
+    background: rgb(2, 116, 116);
+    padding: 0.5rem 5rem;
+    border-radius: 7px;
+    border-color: rgb(25, 70, 70);
+}
+
+.start:hover{
+    background: rgb(37, 137, 137);
+    border-color: rgb(52, 166, 174);
+}
+
+.wrapper{
+    display: flex;
+}
+
+.wrapper .sidebar{
+    background: rgb(37, 137, 137);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 225px;
+    height: 100%;
+    padding: 16px 0;
+    transition: all 0.5s ease;
+}
+
+.wrapper .sidebar ul{
+    padding-left: 0rem !important;
+    align-content: center;
+}
+
+.wrapper .sidebar ul li a{
+    display: block;
+    padding: 5.5px 5.5rem;
+    border-bottom: 1px solid rgb(18, 119, 119);
+    color: rgb(241, 237, 237);
+    font-size: 15px;
+    position: relative;
+    align-content: center;
+}
+
+.wrapper .sidebar ul li a:hover{
+    background: white;
+    color: rgb(37, 137, 137);
+}
+
+.wrapper .section{
+    width: calc(100% - 225px);
+    margin-left: 225px;
+    transition: all 0.5s ease;
+}
+
+.wrapper .section .top_navbar{
+    background-color: rgb(37, 137, 137);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    width: 100%;
+    position: fixed;
+}
+
+.wrapper .section .top_navbar .hamburger a{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.wrapper .section .top_navbar .hamburger a:hover{
+    color: rgb(75, 200, 209);
+}
+
+body.active .wrapper .sidebar{
+    left: -225px;
+}
+
+body.active .wrapper .section{
+    margin-left: 0;
+    width: 100%;
+}
